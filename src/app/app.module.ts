@@ -12,12 +12,14 @@ import {MatIconModule} from "@angular/material/icon";
 import { ContentComponent } from './Components/content/content.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from "@angular/material/list";
+import { CarComponent } from './Components/car/car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,

@@ -14,5 +14,4 @@ export class ContentComponent {
       this.opened = data;
     })
   }
-
 }

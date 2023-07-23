@@ -5,6 +5,7 @@
   width: 200px;
   min-width: 200px;
   padding: 16px;
+  background-color: rgb(209, 255, 255);
 }
 mat-drawer-container{
   position: fixed;
@@ -18,7 +19,7 @@ a{
   color: darkblue;
   text-decoration: none;
 }
-a.hover{
+a:hover{
   font-weight: bold;
 }
 .active a{

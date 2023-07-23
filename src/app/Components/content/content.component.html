@@ -1,17 +1,28 @@
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container>
   <mat-drawer [opened]="opened" mode="side">
-
-      <mat-list>
-        <mat-list-item [routerLinkActive]="['active']">
-          <mat-icon color="primary" mat-list-icon>direction_car</mat-icon>
-          <a>Cars</a>
-        </mat-list-item>
-      </mat-list>
-
+    <mat-list>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>airport_shuttle</mat-icon>
+        <a routerLink="/cars" mat-line>Cars</a>
+      </mat-list-item>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>train</mat-icon>
+        <a mat-line>Fuel Type</a>
+      </mat-list-item>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>euro</mat-icon>
+        <a mat-line>Reservation</a>
+      </mat-list-item>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>memory</mat-icon>
+        <a mat-line> Reports</a>
+      </mat-list-item>
+    </mat-list>
   </mat-drawer>
   <mat-drawer-content>
     <div class="content">
       <router-outlet></router-outlet>
     </div>
   </mat-drawer-content>
+
 </mat-drawer-container>
